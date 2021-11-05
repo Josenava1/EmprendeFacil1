@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo</title>
+    <link href="{{ url_for('static',filename='styles/normalize.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static',filename='styles/equipo.css') }}" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <header class="site-header content-header">
+        <div class="barra">
+            <img class="logo" src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="logo">
+            <nav class="navegation">
+                <a href="/prueba.html">Nuestra Pagina Web</a>
+                
+            </nav>
+        </div>
+        <h1>GRUPO 3 2021</h1>
+    </header><!-- Este es el header -->
+    <main class="contendor">
+        <h2>¿Quienes somos?</h2>
+        <div class="equipo">
+            <section class="persona">
+                <img src="{{ url_for('static', filename='images/foto_elian.jpeg') }}" alt="Elian">
+                <h3>Elian López</h3>
+                <h4>Alumno</h4>
+                <ul>
+                    <li>Carrera: Ing. Civil Plan Común</li>
+                    <li>Edad: 18</li>
+                    
+                </ul>
+                <p>Es alumno de la universidad Adolfo Ibáñez, recién está pasando su segundo semestre, pero le está poniendo ganas (o eso cree él) . No le gustan nada las clases online pero de flojo no va a la u. Y el único deporte que hace es ir a comprar pancito.</p>
+            </section>
+            <section class="persona">
+                <img src="{{ url_for('static', filename='images/foto_cristobal.jpeg') }}" alt="Cristobal">
+                <h3>Cristóbal Vacarezza</h3>
+                <h4>Alumno</h4>
+                <ul>
+                    <li>Carrera: Ing. Civil Plan Común</li>
+                    <li>Edad:20 </li>
+                    
+                </ul>
+                <p>Estudia actualmente en la universidad Adolfo Ibañez, sede Santiago. Se metió a TEI de programación por el horario. Sale a trotar el 32 de cada mes. Le gusta la marraqueta con mantequilla y jugar ping pong los domingos en la tarde. Alérgico al polvo</p>
+            </section>
+            <section class="persona">
+                <img src="{{ url_for('static', filename='images/foto_andres.jpeg') }}" alt="Andres">
+                <h3>Andres Hohmann</h3>
+                <h4>Alumno</h4>
+                <ul>
+                    <li>Carrera: Ing. Civil Plan Común</li>
+                    <li>Edad: 20</li>
+                    
+                </ul>
+                <p>Es fanatico del fútbol, podría pasar un día entero viendo partidos, hincha de Coquimbo Unido. Su comida favorita son los completos. Para él no hay nada mejor que pasar tiempo con sus amigos.</p>
+            </section>
+            <section class="persona">
+                <img src="{{ url_for('static', filename='images/foto_nava2.jpeg') }}" alt="Jose">
+                <h3>Jose Nava</h3>
+                <h4>Alumno</h4>
+                <ul>
+                    <li>Carrera: Ing. Civil Plan Común</li>
+                    <li>Edad: 19</li>
+                    
+                </ul>
+                <p>Le gustan las sopaipillas. Rinde adentro y afuera de clases, pero más afuera. Alto y grande en todo sentido.</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
