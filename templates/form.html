@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{{ url_for('static',filename='styles/form.css') }}" rel="stylesheet" type="text/css">
+        <title>Calculo Financiero</title>
+    </head>
+<body>
+
+  <div class="topnav">
+    <img class="logoprincipal"  src="{{ url_for('static', filename='images/logofinalfinal.jpeg') }}" alt="logo"   >       
+
+  </div>  
+
+<h1 class="tituloform"> Cálculo Financiero</h1>
+<div>
+  <form class="form-space" action="/calculosformulario" methods="POST" >
+    
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Cristóbal Ugarte..." required pattern="[A-Za-z]+" title="Solo texto"/>
+
+    <label for="nombredetuemprendimiento">Nombre de tu Emprendimiento</label>
+    <input type="text" id="nombredetuemprendimiento" name="nombredetuemprendimiento" placeholder="NotCo ..." required>
+
+    <label for="tipo_industria">Industria de tu emprendimiento</label>
+    <select id="tipo_industria" name="tipo_industria">
+    <option value="elegir">Selecciona una industria</option>
+      <option value="Comercialización">Comercialización</option>
+      <option value="Cosmeticos">Cosmeticos</option>
+      <option value="Calzado">Calzado</option>
+      <option value="Manufactura">Manufactura</option>
+      <option value="No Especificado">Otro...</option>
+    </select>
+
+    <label for="ingresomensual">Ingreso bruto mensual</label>
+    <input type="number" id="ingresomensual" name="ingresomensual" placeholder="$280.000 ..." min="0" required>
+
+    <label for="capitaldisponible">Capital total del que tu emprendimiento dispone en este momento</label>
+    <input type="number" id="capitaldisponible" name="capitaldisponible" placeholder="$90.000" required>
+
+    <label for="activos">Patrimonio en activos</label>
+    <input type="number" id="activos" name="activos" placeholder="$834.000" required>
+
+    <label for="pagosueldos">Pagos en sueldos y honorarios mensualmente en promedio</label>
+    <input type="number" id="pagosueldos" name="pagosueldos" placeholder="$380.000" required>  
+    
+    <label for="inversionprod">Inversion en productos</label>
+    <input type="number" id="inversionprod" name="inversionprod" placeholder="$90.000" required> 
+
+    <label for="gastopublicidad">Gasto mensual promedio en publicidad y marketing</label>
+    <input type="number" id="gastopublicidad" name="gastopublicidad" placeholder="$120.000" required>
+
+    <label for="gastosop">Gastos operacionales</label>
+    <input type="number" id="gastosop" name="gastosop" placeholder="$22.000" required>
+
+    <label for="otrosgastos">Otros gastos</label>
+    <input type="number" id="otrosgastos" name="otrosgastos" placeholder="$62.000" required>
+
+    <label for="canalesventas">Cantidad de canales de ventas activos</label>
+    <input type="number" id="canalesventas" name="canalesventas" placeholder="2" required>
+
+    <label for="unidadescompradas">Unidades de producto adquiridas este mes</label>
+    <input type="number" id="unidadescompradas" name="unidadescompradas" placeholder="23" required>
+
+    <label for="unidadesvendidas">Unidades de producto vendidas este mes</label>
+    <input type="number" id="unidadesvendidas" name="unidadesvendidas" placeholder="18" required>
+
+    <label for="porcentajeaumento">¿En que porcentaje te gustaría aumentar tus ventas?</label>
+    <input type="number" id="porcentajeaumento" name="porcentajeaumento" placeholder="12" required>
+
+
+
+
+  
+    <input type="submit" value="Enviar Formulario">
+    <input type="button" value="Volver al Menú principal" onClick="history.go(-1);">
+  </form>
+</div>
+</body>
+</html>
